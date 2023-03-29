@@ -19,14 +19,15 @@ function Home(){
         <div>
             <h1>Home</h1>
             
-            <img src="https://files.codingninjas.in/article_images/codingcompetitionblog-23489.webp" width="75%"></img>
+            <img src="https://files.codingninjas.in/article_images/codingcompetitionblog-23489.webp" alt='codingimage' width="75%"></img>
 
             <h3 className='mt-5'>Websites for contests</h3>
             {allsites.map((ele) => (
                 <div className='ml-2 mb-2 mr-2'>
                 <Card >
                     <p>Contest Name: {ele[0]}</p>
-                    <a>Contest Website: {ele[2]}</a>
+                    <p>Contest Website:</p>
+                    <a target="_blank" rel="noreferrer" href={ele[2]}>{ele[2]}</a>
                 </Card>
                 </div>
             ))}

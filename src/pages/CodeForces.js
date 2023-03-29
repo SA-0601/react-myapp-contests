@@ -23,7 +23,7 @@ function CodeForces(){
                 <div>
                 <h5>Contest Name: {ele.name}</h5>
                 <p>Link for registration:</p>
-                <a href="{ele.url}"> {ele.url}</a>
+                <a href={ele.url}> {ele.url}</a>
                 <p>Duration of Contest: {ele.duration}</p>
                 <p>Start Time : {ele.start_time}</p>
                 <p>End Time: {ele.end_time}</p>

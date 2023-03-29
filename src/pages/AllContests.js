@@ -16,11 +16,11 @@ function AllContests(){
       fetchData();
     }, []);
 
-    allcontests.forEach(element => {
-      if(element.site === 'CodeForces'){
-        const codeforcesContests = element;
-      }
-    });
+    // allcontests.forEach(element => {
+    //   if(element.site === 'CodeForces'){
+    //     const codeforcesContests = element;
+    //   }
+    // });
     
 
     return (
