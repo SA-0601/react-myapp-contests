@@ -3,7 +3,7 @@ import { Navbar, Container } from "react-bootstrap";
 function NavBar() {
   return (
     <>
-      <Navbar bg="light" variant="light" fixed="top">
+      <Navbar className="nav" bg="black" variant="light" fixed="top">
         <Container>
           <Link to="/">Home</Link>
           <Link to="/allcontests">AllContests</Link>

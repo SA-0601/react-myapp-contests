@@ -16,13 +16,20 @@ function AllContests(){
       fetchData();
     }, []);
 
+    allcontests.forEach(element => {
+      if(element.site === 'CodeForces'){
+        const codeforcesContests = element;
+      }
+    });
+    
+
     return (
         <div>
             <h1>AllContests</h1>
             {allcontests.map((ele,index) => (
                 <div>
-                <a href={ele.url}>{ele.name}</a>
-                
+                   <a href={ele.url}>{ele.name}</a>
+                   <p> By {ele.site}</p>
                 </div>
                 
             ))}
